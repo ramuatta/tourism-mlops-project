@@ -185,7 +185,7 @@ def main():
         # Log model in MLflow
         mlflow.sklearn.log_model(
             sk_model=best_model,
-            name="tourism_package_model"
+            artifact_path="tourism_package_model"
         )
 
         print("\nMLflow parameters, metrics, and model logged.")
